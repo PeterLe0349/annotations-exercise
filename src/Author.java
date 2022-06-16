@@ -4,7 +4,7 @@
 
 import java.util.ArrayList;
 import java.util.List;
-@SuppressWarnings({"unchecked"})
+@SuppressWarnings({"unchecked", "override"})
 public class Author extends Person {
     private List books;
 
@@ -29,7 +29,7 @@ public class Author extends Person {
         books.add(book);
     }
 
-     //returns last first, instead of first last like fullname from super
+    //returns last first, instead of first last like fullname from super
     public String sortName() {
         return String.format("%s, %s", lastName, firstName);
     }
